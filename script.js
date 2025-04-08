@@ -26,6 +26,7 @@ randomColorBtn.addEventListener("click", function () {
   document.body.style.backgroundColor = randomColor;
 });
 
+
 // Toggle Button for the Glow Style
 function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn");
@@ -39,10 +40,11 @@ darkModeBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
   
   if (document.body.classList.contains("dark-mode")) {
-    darkModeBtn.innerText = "light mode";
+    darkModeBtn.innerText = "Light mode";
   } else {
-    darkModeBtn.innerText = "dark mode";
+    darkModeBtn.innerText = "Dark mode";
   }
 });
+
 
   
