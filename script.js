@@ -1,16 +1,20 @@
-//When the dom is fully loaded, this will be fired
-document.addEventListener("DOMContentLoaded", function(){
+// DOMContentLoaded Event
+document.addEventListener("DOMContentLoaded", function () {
+    let onLoadEl = document.getElementById("onload");
+    onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>";
+  });
+  
+  // Keydown Event
+  let directionEl = document.getElementById("direction");
+  
+  document.addEventListener("keydown", function (e) {
+    directionEl.innerText = `The Key you pressed is ${e.code}`;
+  });
+  
+// Click Event
+let clickMeBtn = document.getElementById("clickMe");
 
-//Get the element with an id of onload
-let onLoadEl = document.getElementById("onload");
-
-//Add some HTML within the element we grabbed
-onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>";
-    });
-
-let directionEI = document.getElementByID("direction");
-
-document.addEventListener("click",function(e){
-    directionEI.innerText = 'The Key you pressed is ${e.code}';
-
+clickMeBtn.addEventListener("click", function () {
+  clickMeBtn.innerText = "You clicked me!";
 });
+
