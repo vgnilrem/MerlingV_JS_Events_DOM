@@ -18,12 +18,19 @@ clickMeBtn.addEventListener("click", function () {
     clickMeBtn.innerText = "You clicked me!";
   });
 
-  // Need to have a section to have the random background color event 
+  // Need to have a section to have the random background color event/
 let randomColorBtn = document.getElementById("randomColorBtn");
 
 randomColorBtn.addEventListener("click", function () {
   const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 70%, 80%)`;
   document.body.style.backgroundColor = randomColor;
 });
+
+// Toggle Button for the Glow Style
+function changeBtnStyle() {
+    const btn = document.querySelector(".cool-btn");
+    btn.classList.toggle("glow");
+  }
+  
 
   
