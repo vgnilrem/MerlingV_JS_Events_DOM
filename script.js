@@ -32,5 +32,17 @@ function changeBtnStyle() {
     btn.classList.toggle("glow");
   }
   
+// Dark Mode Toggle
+let darkModeBtn = document.getElementById("darkModeToggle");
+
+darkModeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  
+  if (document.body.classList.contains("dark-mode")) {
+    darkModeBtn.innerText = "light mode";
+  } else {
+    darkModeBtn.innerText = "dark mode";
+  }
+});
 
   
